@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height:650px;
+  object-fit:cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 div#map {
     min-height: 360px;
 }    
@@ -20,11 +36,10 @@ div#map {
 <body>
     <div class="container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Camera_pics_141.jpg" alt="Snow" style="width:100%;">
-        <div class="bottom-left">Bottom Left</div>
-        <div class="top-left">Top Left</div>
-        <div class="top-right">Top Right</div>
-        <div class="bottom-right">Bottom Right</div>
-        <div class="centered">Centered</div>
+        <div class="centered">
+            <p style="font-size:100px;">Experience Blair County</p> 
+            <p style="font-size:50px;">Tour Central Pennsylvania</p>   
+        </div>
         </div>
     <header class="container-fluid">
         <div class="row">
@@ -139,9 +154,9 @@ div#map {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="background-color:powderblue;padding-top: 100px;padding-bottom: 100px;padding-left: 40px;">
             
-                <form id="contact2">
+                <form>
                     <label for="firstname">First name</label><br>
                     <input type="text" name="firstname" id="firstname"/>
                 </form>
@@ -154,13 +169,10 @@ div#map {
                     <input type="text" name="email" id="email"/>
                 </form>
                 <form>
-                    <label for="messages">Messages</label><br>
-                    <input type="text" name="messages" id="messages"/><br><br><br>
+                    <br>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </form>
-
-
-
+                
             </div>
         </div>
     </section>
